@@ -28,7 +28,7 @@
         let xmlContent = '';
         let tableBooks = document.getElementById('books')
         //fetch xml document
-        fetch("book.xml").then((response) => {
+        fetch("/book.xml").then((response) => {
             response.text().then((xml) =>{
                 //assigns fetched data to previously empty string
                 xmlContent = xml
